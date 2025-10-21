@@ -10,7 +10,6 @@ for (const item of items) {
     let title = item.querySelector("h2").textContent;
     const el =item.querySelectorAll("li").length;
     console.log(`Category: ${title}`);
-    console.log(`Elements: ${el}`);
-    
+    console.log(`Elements: ${el}`);    
 }
 
