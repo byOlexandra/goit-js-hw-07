@@ -151,3 +151,28 @@ input {
   width: 86px;
   cursor: pointer;
 }
+
+/* TASK 5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.widget p {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.change-color {
+  cursor: pointer;
+  background-color: #4E75FF;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-color: transparent;
+  width: 148px;
+}
