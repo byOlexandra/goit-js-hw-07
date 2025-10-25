@@ -25,11 +25,12 @@ const images = [
   }
 ];
 const list = document.querySelector(".gallery");
-for (const image of images) {
-  const li = document.createElement("li");
-  const img = document.createElement("img");
-  img.src = image.url;
-  img.alt = image.alt;
-  li.appendChild(img);
-  list.appendChild(li)
+function itemOfArr(obj) {
+  return `<li><img alt="${obj.alt}" src="${obj.url}" /></li>`
 }
+function itemsOfArr(arr) {
+  return arr.map(itemOfArr).join("");
+}
+const markup = itemsOfArr(images)
+list.insertAdjacentHTML("afterbegin", markup)
+
